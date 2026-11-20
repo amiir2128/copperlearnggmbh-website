@@ -26,7 +26,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --ink: 242 240 250;
     --muted: 172 166 196;
     --canvas: 14 11 28;
@@ -34,6 +34,11 @@
     --line: 48 42 78;
     color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --ink: 242 240 250; --muted: 172 166 196; --canvas: 14 11 28; --surface: 24 20 44; --line: 48 42 78;
+  color-scheme: dark;
 }
 
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }

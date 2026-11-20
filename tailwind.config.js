@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const v = (n) => `rgb(var(--${n}) / <alpha-value>)`
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: ['./index.html', './src/**/*.{js,jsx}', './preview/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {

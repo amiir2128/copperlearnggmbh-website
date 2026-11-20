@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 import { PageHero, Reveal } from '../components/ui'
 import Faq from '../components/Faq'
@@ -38,7 +39,7 @@ export default function HowItWorks() {
           <Price title="Boost 7 Tage" price="1,99 €" highlight items={['Top-Platzierung in der Suche', '7 Tage Laufzeit', 'Endet automatisch, kein Abo']} />
           <Price title="Boost 30 Tage" price="4,99 €" items={['Top-Platzierung in der Suche', '30 Tage Laufzeit', 'Endet automatisch, kein Abo']} />
         </div>
-        <p className="mt-4 text-sm text-muted">Alle Preise in Euro. Bezahlt wird sicher über Stripe. Details in unseren <a href="/agb" className="link">AGB</a>.</p>
+        <p className="mt-4 text-sm text-muted">Alle Preise in Euro. Bezahlt wird sicher über Stripe. Details in unseren <Link to="/agb" className="link">AGB</Link>.</p>
       </section>
 
       <section className="container-x mt-20 sm:mt-28">
