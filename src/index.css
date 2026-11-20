@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design-Tokens: alle Farben nur hier pflegen (RGB-Kanäle für Tailwind-Transparenz). */
+:root {
+  --brand-50: 245 242 255;
+  --brand-100: 236 230 254;
+  --brand-200: 216 203 252;
+  --brand-300: 186 164 247;
+  --brand-400: 152 122 239;
+  --brand-500: 120 86 226;
+  --brand-600: 98 64 208;
+  --brand-700: 79 48 180;
+  --brand-800: 62 37 145;
+  --brand-900: 44 27 102;
+  --brand-950: 25 15 62;
+
+  --ink: 22 18 38;        /* Haupttext */
+  --muted: 92 88 112;     /* Nebentext */
+  --canvas: 251 250 255;  /* Seitenhintergrund */
+  --surface: 255 255 255; /* Karten */
+  --line: 230 226 242;    /* Linien */
+  --mint: 16 185 129;     /* Erfolg/Akzent */
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: 242 240 250;
+    --muted: 172 166 196;
+    --canvas: 14 11 28;
+    --surface: 24 20 44;
+    --line: 48 42 78;
+    color-scheme: dark;
+  }
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  @apply bg-canvas text-ink font-sans antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: rgb(var(--brand-300) / 0.5); }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[15px] font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-400/40 active:scale-[0.97]; }
+  .btn-primary { @apply btn bg-brand-600 text-white shadow-glow hover:bg-brand-700; }
+  .btn-ghost { @apply btn border border-line bg-surface/70 text-ink backdrop-blur hover:border-brand-300 hover:text-brand-600; }
+  .btn-light { @apply btn bg-white text-brand-800 hover:bg-brand-50; }
+  .card { @apply rounded-3xl border border-line bg-surface p-6 shadow-soft sm:p-8; }
+  .eyebrow { @apply text-sm font-semibold uppercase tracking-[0.14em] text-brand-600; }
+  .h-display { @apply font-display font-bold tracking-tight; }
+  .link { @apply font-medium text-brand-600 underline decoration-brand-300 underline-offset-4 hover:decoration-brand-600; }
+
+  /* Rechtstexte */
+  .legal h2 { @apply mt-10 mb-3 text-xl font-bold text-ink sm:text-2xl; }
+  .legal h3 { @apply mt-6 mb-2 text-lg font-semibold text-ink; }
+  .legal p, .legal li { @apply leading-relaxed text-muted; }
+  .legal p { @apply mb-3; }
+  .legal ul { @apply mb-4 list-disc space-y-1 pl-6; }
+  .legal ol { @apply mb-4 list-decimal space-y-1 pl-6; }
+  .legal strong { @apply text-ink; }
+  .legal a { @apply link; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

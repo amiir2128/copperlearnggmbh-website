@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>CopperLearn – Lernen verbindet</title>
+    <meta name="description" content="CopperLearn ist die Nachhilfe-Plattform von Schüler:innen für Schüler:innen am Copernicus-Gymnasium. Eine IW JUNIOR Schülerfirma. Lernen verbindet." />
+    <meta name="theme-color" content="#4a2fb8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta property="og:title" content="CopperLearn – Lernen verbindet" />
+    <meta property="og:description" content="Nachhilfe von Schüler:innen für Schüler:innen am Copernicus-Gymnasium." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Consent Mode v2: Standardmäßig ist alles abgelehnt, bis im Cookie-Banner zugestimmt wird. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      (function () {
+        var granted = false;
+        try { var c = JSON.parse(localStorage.getItem('cl-consent') || 'null'); granted = !!(c && c.ads); } catch (e) {}
+        gtag('consent', 'default', {
+          ad_storage: granted ? 'granted' : 'denied',
+          ad_user_data: granted ? 'granted' : 'denied',
+          ad_personalization: granted ? 'granted' : 'denied',
+          analytics_storage: 'denied',
+          wait_for_update: 500
+        });
+        (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = granted ? 0 : 1;
+      })();
+    </script>
+    <!-- Google AdSense (Code-Snippet aus dem AdSense-Konto) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6538330277297234"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Bitte aktiviere JavaScript, um CopperLearn zu nutzen. Kontakt: CopperLearn.gGmbH@gmail.com</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
