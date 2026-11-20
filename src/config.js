@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'CopperLearn',
   slogan: 'Lernen verbindet',
-  school: 'Copernicus-Gymnasium',
+  school: 'Coppernicus-Gymnasium',
   email: 'CopperLearn.gGmbH@gmail.com',
   instagram: 'https://www.instagram.com/copperlearn_ggmbh',
   tiktok: 'https://www.tiktok.com/@copperlearn_ggmbh',

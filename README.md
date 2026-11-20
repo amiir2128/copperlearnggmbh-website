@@ -1,6 +1,6 @@
 # CopperLearn – Website
 
-„Lernen verbindet." Website der IW JUNIOR Schülerfirma CopperLearn am Copernicus-Gymnasium.
+„Lernen verbindet." Website der IW JUNIOR Schülerfirma CopperLearn am Coppernicus-Gymnasium.
 
 ## Technik
 React 18 + Vite, Tailwind CSS, framer-motion, lucide-react, react-router.
