@@ -1,5 +1,4 @@
 import LegalLayout from '../components/LegalLayout'
-import { Ph } from '../components/ui'
 import { SITE } from '../config'
 
 export default function Datenschutz() {
@@ -10,7 +9,7 @@ export default function Datenschutz() {
       <p>
         CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}<br />
         {SITE.street}, {SITE.city}<br />
-        Vertreten durch: <Ph>Vor- und Nachname(n)</Ph><br />
+        Vertreten durch: {SITE.representatives.map((r) => `${r.name} (${r.role})`).join(', ')}<br />
         E-Mail: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
       </p>
       <p>Eine:n Datenschutzbeauftragte:n müssen wir nicht benennen. Bei Fragen zum Datenschutz erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
@@ -24,7 +23,7 @@ export default function Datenschutz() {
       </ul>
 
       <h2>3. Hosting und Server-Logfiles</h2>
-      <p>Diese Website wird bei <Ph>Hosting-Anbieter, z. B. Vercel Inc. oder Netlify Inc., mit Anschrift</Ph> gehostet. Beim Aufruf werden automatisch Daten erfasst, die dein Browser übermittelt: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Referrer-URL, Browser und Betriebssystem. Das ist nötig, um die Website sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Die Logs werden nach spätestens <Ph>Anzahl</Ph> Tagen gelöscht. Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung. Soweit Daten in die USA übermittelt werden, erfolgt dies auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln.</p>
+      <p>Diese Website wird bei der Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA, gehostet. Beim Aufruf werden automatisch Daten erfasst, die dein Browser übermittelt: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Referrer-URL, Browser und Betriebssystem. Das ist nötig, um die Website sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Die Logs werden nur kurzzeitig gespeichert und danach automatisch gelöscht. Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung. Soweit Daten in die USA übermittelt werden, erfolgt dies auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln.</p>
       <p>Die Verbindung ist per TLS (HTTPS) verschlüsselt. Wir binden keine externen Schriftarten ein.</p>
 
       <h2>4. Cookies und Einwilligung</h2>
@@ -41,18 +40,18 @@ export default function Datenschutz() {
       <h2>7. Die CopperLearn-App</h2>
       <h3>Nutzerkonto</h3>
       <p>Für die Nutzung der Nachhilfe-Plattform brauchst du ein Konto. Wir verarbeiten Name, E-Mail-Adresse, Passwort (verschlüsselt), Klassenstufe und Rolle (Schüler:in / Tutor:in). Die E-Mail-Adresse bestätigen wir per Einmalcode. Optional kannst du dich mit deinem Google-Konto anmelden; dann erhalten wir von Google Name, E-Mail-Adresse und ggf. Profilbild. Rechtsgrundlage ist die Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).</p>
-      <p>Die App wird betrieben bei <Ph>App-/Backend-Anbieter, z. B. Base44 oder Supabase, mit Anschrift und Serverstandort</Ph>. Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung.</p>
+      <p>Die App wird derzeit neu entwickelt. Den Anbieter, bei dem die App-Daten gespeichert werden, nennen wir hier vor dem Start der neuen App; mit ihm schließen wir einen Vertrag zur Auftragsverarbeitung.</p>
       <h3>Profile, Anfragen, Termine und Lerninhalte</h3>
       <p>Wir verarbeiten die Inhalte, die du in der App einstellst: Tutor-Profile (Fächer, Klassenstufen, Preise, Verfügbarkeit, Beschreibung, Profilbild), Nachhilfe-Anfragen, Termine, Chat-Nachrichten, Aufgaben, Abgaben, Materialien (Datei-Uploads), Notizen, Bewertungen und Benachrichtigungen. Öffentliche Profile zeigen <strong>niemals</strong> Telefonnummern oder E-Mail-Adressen. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
       <h3>Meldungen und Sicherheit</h3>
       <p>Wenn du ein Profil oder einen Termin meldest, verarbeiten wir die Meldung, um Missbrauch zu verhindern und die Sicherheit der Nutzer:innen zu schützen (Art. 6 Abs. 1 lit. f DSGVO).</p>
       <h3>Video-Meetings (Jitsi Meet)</h3>
-      <p>Für Online-Nachhilfe nutzen wir Jitsi Meet. Anbieter ist <Ph>8x8 Inc. (meet.jit.si) oder eigener Jitsi-Server mit Anbieter und Standort</Ph>. Während eines Meetings werden Bild, Ton, Anzeigename und technische Verbindungsdaten (z. B. IP-Adresse) verarbeitet. Meetings werden nicht von uns aufgezeichnet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Bei Nutzung von meet.jit.si kann eine Übermittlung in die USA erfolgen.</p>
+      <p>Für Online-Nachhilfe nutzen wir Jitsi Meet. Wir nutzen dafür einen Jitsi-Server in Deutschland (meet.ffmuc.net, betrieben vom Freifunk München e.V.). Es ist kein Konto nötig. Während eines Meetings werden Bild, Ton, Anzeigename und technische Verbindungsdaten (z. B. IP-Adresse) verarbeitet. Meetings werden nicht von uns aufgezeichnet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
       <h3>Zahlungen (Stripe)</h3>
       <p>Bezahlte Termine und Profil-Boosts werden über Stripe abgewickelt. Anbieter ist die Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland. Deine Zahlungsdaten (z. B. Kartennummer) gibst du direkt bei Stripe ein; wir erhalten sie nicht. Wir speichern Betrag, Gebühr, Status und Transaktions-ID. Stripe kann Daten an Stripe, Inc. in den USA übermitteln (EU-US Data Privacy Framework, Standardvertragsklauseln). Rechtsgrundlage: Art. 6 Abs. 1 lit. b und c DSGVO. Mehr: <a href="https://stripe.com/de/privacy" target="_blank" rel="noopener noreferrer">stripe.com/de/privacy</a>.</p>
 
       <h2>8. Anteilscheine</h2>
-      <p>Für den Verkauf von Anteilscheinen verarbeiten wir Name, E-Mail-Adresse, Ort und Datum der fördernden Person, um den Anteilschein auszustellen, den Beleg zu dokumentieren und dich ggf. zur Abschlussversammlung einzuladen (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden nach Auflösung der Schülerfirma gelöscht, sofern keine Aufbewahrungspflichten bestehen.</p>
+      <p>Für den Verkauf von Anteilscheinen verarbeiten wir Name, E-Mail-Adresse, Ort und Datum der fördernden Person, um den Anteilschein auszustellen und den Beleg zu dokumentieren (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden nach Auflösung der Schülerfirma gelöscht, sofern keine Aufbewahrungspflichten bestehen.</p>
 
       <h2>9. Social Media</h2>
       <p>Wir verlinken auf unsere Profile bei Instagram und TikTok. Es handelt sich um einfache Links; beim Besuch unserer Website werden keine Daten an diese Netzwerke übertragen. Erst wenn du einen Link anklickst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>

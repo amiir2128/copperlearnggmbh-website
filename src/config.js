@@ -4,6 +4,13 @@ export const SITE = {
   slogan: 'Lernen verbindet',
   school: 'Coppernicus-Gymnasium',
   street: 'Coppernicusstraße 1',
+  phone: '+49 155 11487141',
+  // Vertretungsberechtigte (Impressum, Datenschutz, AGB)
+  representatives: [
+    { name: 'Amir Mait', role: 'Geschäftsführer' },
+    { name: 'Amr Al-Bathigi', role: 'Stellvertretender Geschäftsführer' },
+  ],
+  teacher: 'Julia Kapraun',
   city: '22850 Norderstedt',
   email: 'CopperLearn.gGmbH@gmail.com',
   instagram: 'https://www.instagram.com/copperlearn_ggmbh',

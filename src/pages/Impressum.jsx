@@ -1,5 +1,4 @@
 import LegalLayout from '../components/LegalLayout'
-import { Ph } from '../components/ui'
 import { SITE } from '../config'
 
 export default function Impressum() {
@@ -15,15 +14,14 @@ export default function Impressum() {
 
       <h2>Vertreten durch</h2>
       <p>
-        <Ph>Vor- und Nachname, Funktion (z. B. Vorstandsvorsitz / Geschäftsführung)</Ph><br />
-        <Ph>Weitere vertretungsberechtigte Person, Funktion</Ph>
+        {SITE.representatives.map((r) => (<span key={r.name}>{r.name}, {r.role}<br /></span>))}
       </p>
-      <p>Betreuende Lehrkraft: <Ph>Vor- und Nachname</Ph></p>
+      <p>Betreuende Lehrkraft: {SITE.teacher}</p>
 
       <h2>Kontakt</h2>
       <p>
         E-Mail: <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
-        Telefon: <Ph>Telefonnummer (z. B. Sekretariat oder Schülerfirmen-Handy)</Ph>
+        Telefon: <a href={`tel:${SITE.phone.replace(/ /g, '')}`}>{SITE.phone}</a>
       </p>
 
       <h2>Programm</h2>
@@ -33,7 +31,7 @@ export default function Impressum() {
       <p>CopperLearn ist eine Schülerinitiative und keine offizielle Einrichtung, App oder Website des {SITE.school}s.</p>
 
       <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-      <p><Ph>Vor- und Nachname</Ph>, {SITE.street}, {SITE.city}</p>
+      <p>{SITE.representatives.map((r) => r.name).join(' und ')}, {SITE.street}, {SITE.city}</p>
 
       <h2>Verbraucherstreitbeilegung</h2>
       <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>

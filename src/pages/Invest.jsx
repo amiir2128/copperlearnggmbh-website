@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, Check, Info } from 'lucide-react'
-import { PageHero, Ph, Reveal } from '../components/ui'
+import { PageHero, Reveal } from '../components/ui'
 import { SITE } from '../config'
 
 const subject = encodeURIComponent('Anteilschein CopperLearn')
@@ -64,7 +64,7 @@ export default function Invest() {
           <div>
             <h2 className="font-semibold">Was passiert am Ende des Schuljahres mit dem Kapital?</h2>
             <p className="mt-2 text-muted">
-              <Ph>Kapitalverwendung laut Anteilschein eintragen: entweder Auszahlung des restlichen Kapitals zu gleichen Anteilen an alle Fördernden (dafür speichern wir deine E-Mail-Adresse für die Abschlussversammlung) oder Entscheidung gemeinsam mit der Schule, z. B. für wohltätige Zwecke, gemeinsame Aktivitäten oder eine andere Schülerfirma</Ph>
+              Wenn CopperLearn am Ende des Projekts aufgelöst wird, spenden wir das verbleibende Kapital über die IW JUNIOR gGmbH für einen gemeinnützigen Zweck. Eine Auszahlung an die Fördernden erfolgt nicht. Für das Fördergeld gibt es keine Spendenquittung, und es ist nicht steuerlich absetzbar.
             </p>
             <p className="mt-3 text-sm text-muted">Mehr Informationen zum Programm findest du auf <a href={SITE.iwJuniorUrl} target="_blank" rel="noopener noreferrer" className="link">iwjunior.de</a>. Fragen? <Link to="/kontakt" className="link">Schreib uns.</Link></p>
           </div>

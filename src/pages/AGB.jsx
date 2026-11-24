@@ -7,7 +7,7 @@ export default function AGB() {
   return (
     <LegalLayout title="Allgemeine Geschäftsbedingungen" intro="Die Regeln für die Nutzung von CopperLearn, verständlich zusammengefasst.">
       <h2>§ 1 Geltungsbereich und Anbieter</h2>
-      <p>Diese AGB gelten für die Nutzung der Website und der Nachhilfe-Plattform CopperLearn. Anbieter ist CopperLearn, eine IW JUNIOR Schülerfirma am {SITE.school}, vertreten durch <Ph>Vor- und Nachname(n)</Ph> (weitere Angaben im <Link to="/impressum">Impressum</Link>). CopperLearn ist eine Schülerinitiative und keine Einrichtung der Schule.</p>
+      <p>Diese AGB gelten für die Nutzung der Website und der Nachhilfe-Plattform CopperLearn. Anbieter ist CopperLearn, eine IW JUNIOR Schülerfirma am {SITE.school}, vertreten durch {SITE.representatives.map((r) => `${r.name} (${r.role})`).join(', ')} (weitere Angaben im <Link to="/impressum">Impressum</Link>). CopperLearn ist eine Schülerinitiative und keine Einrichtung der Schule.</p>
 
       <h2>§ 2 Leistungen von CopperLearn</h2>
       <p>CopperLearn stellt eine Plattform bereit, über die Schüler:innen Nachhilfe suchen (Nachhilfeschüler:innen) und anbieten (Tutor:innen) können. Dazu gehören Suche und Filter, Anfragen, Termine, Kalender, Chat, ein Workspace mit Video-Meeting, Whiteboard, Materialien und Notizen, Aufgaben mit Feedback, Bewertungen, ein Melde-System und der Profil-Boost.</p>

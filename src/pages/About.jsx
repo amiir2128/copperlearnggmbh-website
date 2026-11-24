@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Heart, Lightbulb, Handshake } from 'lucide-react'
-import { PageHero, Ph, Reveal } from '../components/ui'
+import { PageHero, Reveal } from '../components/ui'
 import { SITE } from '../config'
 
 // Team: Namen und Rollen hier eintragen (nur mit Einverständnis der Personen veröffentlichen)
 const TEAM = [
-  { role: 'Vorstand / Geschäftsführung', name: null },
-  { role: 'Finanzen', name: null },
-  { role: 'Technik & App', name: null },
-  { role: 'Marketing & Social Media', name: null },
+  { name: 'Amir Mait', role: 'Geschäftsführer' },
+  { name: 'Amr Al-Bathigi', role: 'Stellv. Geschäftsführer · Strategie & Partnerschaften' },
+  { name: 'Yasin Baykal', role: 'Leitung Finanzen' },
+  { name: 'Frey Bermann', role: 'Finanzen & Controlling' },
+  { name: 'Marie Becker', role: 'Leitung Verwaltung & Organisation' },
+  { name: 'Cyrus Vermani', role: 'Leitung Marketing & Community' },
 ]
 
 export default function About() {
@@ -46,11 +48,11 @@ export default function About() {
 
       <section className="container-x mt-20 sm:mt-28">
         <Reveal><h2 className="h-display text-3xl sm:text-4xl">Das Team</h2></Reveal>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((m, i) => (
-            <Reveal key={m.role} delay={i * 0.06} className="card !p-6">
-              <div className="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-brand-400 to-brand-700 text-xl font-bold text-white">{m.name ? m.name[0] : '?'}</div>
-              <p className="mt-4 font-semibold">{m.name || <Ph>Name</Ph>}</p>
+            <Reveal key={m.name} delay={i * 0.06} className="card !p-6">
+              <div className="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-brand-400 to-brand-700 text-xl font-bold text-white">{m.name.split(' ').map((w) => w[0]).slice(0, 2).join('')}</div>
+              <p className="mt-4 font-semibold">{m.name}</p>
               <p className="text-sm text-muted">{m.role}</p>
             </Reveal>
           ))}
@@ -59,6 +61,7 @@ export default function About() {
 
       <section className="container-x mt-20 text-center">
         <Reveal>
+          <p className="mb-6 text-muted">Betreut von {SITE.teacher}, Lehrkraft am {SITE.school}.</p>
           <Link to="/investieren" className="btn-primary">Uns unterstützen <ArrowRight className="h-4 w-4" /></Link>
         </Reveal>
       </section>
