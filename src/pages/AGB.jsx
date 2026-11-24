@@ -42,7 +42,8 @@ export default function AGB() {
       <ol>
         <li>Termine können bis 2 Stunden vor Beginn kostenlos abgesagt werden. Der gezahlte Betrag wird vollständig erstattet.</li>
         <li>Sagt die Tutor:in ab oder erscheint sie nicht, wird ein bereits gezahlter Betrag vollständig erstattet.</li>
-        <li>Bei einer späteren Absage (weniger als 2 Stunden vor Beginn) oder Nichterscheinen der Nachhilfeschüler:in werden 50 % des Preises als Ausfallentschädigung für die Tutor:in einbehalten (abzüglich der Provision nach § 5), die übrigen 50 % werden erstattet. Der Nachhilfeschüler:in bleibt der Nachweis gestattet, dass kein oder ein geringerer Schaden entstanden ist.</li>
+        <li>Bei Absagen erhält CopperLearn keine Provision. CopperLearn tritt nur als Vermittler auf; die Provision nach § 5 fällt ausschließlich für tatsächlich durchgeführte Termine an.</li>
+        <li>Bei einer späteren Absage (weniger als 2 Stunden vor Beginn) oder Nichterscheinen der Nachhilfeschüler:in werden 50 % des Preises als Ausfallentschädigung für die Tutor:in einbehalten, die übrigen 50 % werden erstattet. Der Nachhilfeschüler:in bleibt der Nachweis gestattet, dass kein oder ein geringerer Schaden entstanden ist.</li>
         <li>Das gesetzliche Widerrufsrecht bleibt unberührt. Wird ein Vertrag wirksam widerrufen, gelten die Regeln der <Link to="/widerruf">Widerrufsbelehrung</Link>.</li>
       </ol>
 
