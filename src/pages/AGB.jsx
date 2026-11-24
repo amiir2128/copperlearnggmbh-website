@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import LegalLayout from '../components/LegalLayout'
-import { Ph } from '../components/ui'
 import { SITE } from '../config'
 
 export default function AGB() {
@@ -34,16 +33,17 @@ export default function AGB() {
       <h2>§ 5 Preise und Zahlung</h2>
       <ol>
         <li>Tutor:innen legen fest, ob ihre Nachhilfe kostenlos oder bezahlt ist und zu welchem Preis. Der Preis wird vor der Buchung angezeigt. Alle Preise sind Endpreise in Euro.</li>
-        <li>Für bezahlte Termine erhält CopperLearn eine Vermittlungsgebühr von 15 % des Preises; 85 % stehen der Tutor:in zu.</li>
+        <li>Für bezahlte Termine erhält CopperLearn eine Vermittlungsgebühr (Provision) von 10 % des Preises; 90 % stehen der Tutor:in zu.</li>
         <li>Die Zahlung erfolgt über den Zahlungsdienstleister Stripe. Es gelten ergänzend dessen Bedingungen.</li>
-        <li>Die Auszahlung an Tutor:innen erfolgt <Ph>Auszahlungsweg und -zeitpunkt, z. B. monatlich per Überweisung</Ph>.</li>
+        <li>Die Auszahlung an Tutor:innen erfolgt gesammelt einmal im Monat, sobald das Guthaben mindestens 5 € beträgt. Kleinere Beträge werden in den Folgemonat übertragen und spätestens mit Auflösung der Schülerfirma ausgezahlt.</li>
       </ol>
 
       <h2>§ 6 Absage und Erstattung</h2>
       <ol>
-        <li>Termine können bis <Ph>Frist, z. B. 24 Stunden</Ph> vor Beginn kostenlos abgesagt werden.</li>
+        <li>Termine können bis 2 Stunden vor Beginn abgesagt werden. Der gezahlte Betrag wird erstattet, abzüglich einer Stornogebühr von 5 % für CopperLearn.</li>
         <li>Sagt die Tutor:in ab oder erscheint sie nicht, wird ein bereits gezahlter Betrag vollständig erstattet.</li>
-        <li>Bei späterer Absage oder Nichterscheinen der Nachhilfeschüler:in <Ph>Regelung, z. B. keine Erstattung oder 50 %</Ph>.</li>
+        <li>Bei einer späteren Absage (weniger als 2 Stunden vor Beginn) oder Nichterscheinen der Nachhilfeschüler:in wird nichts erstattet. Der Betrag wird je zur Hälfte zwischen der Tutor:in und CopperLearn aufgeteilt.</li>
+        <li>Das gesetzliche Widerrufsrecht bleibt unberührt. Wird ein Vertrag wirksam widerrufen, gelten die Regeln der <Link to="/widerruf">Widerrufsbelehrung</Link>.</li>
       </ol>
 
       <h2>§ 7 Profil-Boost</h2>

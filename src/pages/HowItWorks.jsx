@@ -35,7 +35,7 @@ export default function HowItWorks() {
           <h2 className="h-display mt-3 text-3xl sm:text-5xl">Fair und transparent.</h2>
         </Reveal>
         <div className="mt-10 grid gap-4 md:grid-cols-3">
-          <Price title="Nachhilfe" price="Preis der Tutor:in" items={['Kostenlos oder bezahlt, je nach Angebot', '15 % Vermittlungsgebühr an CopperLearn', '85 % gehen an die Tutor:in', 'Beispiel: 10 € → 8,50 € Tutor:in, 1,50 € Gebühr']} />
+          <Price title="Nachhilfe" price="Preis der Tutor:in" items={['Kostenlos oder bezahlt, je nach Angebot', '10 % Provision an CopperLearn', '90 % gehen an die Tutor:in', 'Beispiel: 8 € → 7,20 € Tutor:in, 0,80 € Provision', 'Auszahlung monatlich ab 5 €']} />
           <Price title="Boost 7 Tage" price="1,99 €" highlight items={['Top-Platzierung in der Suche', '7 Tage Laufzeit', 'Endet automatisch, kein Abo']} />
           <Price title="Boost 30 Tage" price="4,99 €" items={['Top-Platzierung in der Suche', '30 Tage Laufzeit', 'Endet automatisch, kein Abo']} />
         </div>
@@ -50,7 +50,7 @@ export default function HowItWorks() {
             ['Wer kann Nachhilfe geben?', 'Alle registrierten Schüler:innen, die ein Tutor-Profil anlegen. Bewertungen nach jedem Termin helfen, gute Tutor:innen zu finden.'],
             ['Ich bin unter 18. Darf ich mitmachen?', 'Ja. Für bezahlte Leistungen brauchst du aber die Zustimmung deiner Eltern bzw. Erziehungsberechtigten. Unter 16 Jahren muss auch der Verarbeitung deiner Daten ein Elternteil zustimmen.'],
             ['Wie werden meine Daten geschützt?', 'Telefonnummern und E-Mail-Adressen erscheinen nie auf öffentlichen Profilen. Mehr dazu in unserer Datenschutzerklärung.'],
-            ['Was passiert, wenn ein Termin ausfällt?', 'Termine können in der App abgesagt werden. Bereits bezahlte Termine, die nicht stattfinden, werden erstattet. Details stehen in den AGB.'],
+            ['Was passiert, wenn ich absagen muss?', 'Bis 2 Stunden vor Beginn bekommst du dein Geld zurück, abzüglich 5 % Stornogebühr. Danach wird nichts erstattet. Sagt die Tutor:in ab, bekommst du alles zurück.'],
             ['Wie kann ich etwas melden?', 'Über die Melde-Funktion an Profilen und Terminen, oder per E-Mail an ' + SITE.email + '.'],
           ]} />
         </Reveal>

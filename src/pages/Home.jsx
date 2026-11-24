@@ -97,7 +97,7 @@ export default function Home() {
             <ul className="mt-4 space-y-2 text-brand-100/85">
               <li>• Profil anlegen, Fächer und Klassenstufen wählen</li>
               <li>• Preis selbst festlegen oder kostenlos helfen</li>
-              <li>• 85 % des Preises gehen direkt an dich</li>
+              <li>• 90 % des Preises gehen an dich</li>
               <li>• Erfahrung sammeln, die sich in jedem Lebenslauf gut macht</li>
             </ul>
             <a href={SITE.appUrl} className="btn-light mt-7">Tutor:in werden <ArrowRight className="h-4 w-4" /></a>
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               { icon: ShieldCheck, t: 'Privatsphäre', d: 'Kontaktdaten bleiben privat. Kommunikation läuft über den Chat.' },
-              { icon: Euro, t: 'Transparent', d: '15 % Vermittlungsgebühr pro bezahltem Termin, sonst nichts.' },
+              { icon: Euro, t: 'Transparent', d: '10 % Provision pro bezahltem Termin, sonst nichts.' },
               { icon: Rocket, t: 'Profil-Boost', d: '1,99 € für 7 Tage oder 4,99 € für 30 Tage ganz oben in der Suche.' },
               { icon: Star, t: 'Qualität', d: 'Bewertungen nach jedem Termin zeigen, wer wirklich gut erklärt.' },
             ].map((x, i) => (
