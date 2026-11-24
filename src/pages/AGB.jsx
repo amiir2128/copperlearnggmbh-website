@@ -34,15 +34,15 @@ export default function AGB() {
       <ol>
         <li>Tutor:innen legen fest, ob ihre Nachhilfe kostenlos oder bezahlt ist und zu welchem Preis. Der Preis wird vor der Buchung angezeigt. Alle Preise sind Endpreise in Euro.</li>
         <li>Für bezahlte Termine erhält CopperLearn eine Vermittlungsgebühr (Provision) von 10 % des Preises; 90 % stehen der Tutor:in zu.</li>
-        <li>Die Zahlung erfolgt über den Zahlungsdienstleister Stripe. Es gelten ergänzend dessen Bedingungen.</li>
+        <li>Bezahlte Termine werden bei der Buchung, also vor der Nachhilfe, bezahlt. Die Zahlung erfolgt über den Zahlungsdienstleister Stripe; es gelten ergänzend dessen Bedingungen. Bei Minderjährigen erfolgt die Zahlung durch oder mit Zustimmung der Erziehungsberechtigten.</li>
         <li>Die Auszahlung an Tutor:innen erfolgt gesammelt einmal im Monat, sobald das Guthaben mindestens 5 € beträgt. Kleinere Beträge werden in den Folgemonat übertragen und spätestens mit Auflösung der Schülerfirma ausgezahlt.</li>
       </ol>
 
       <h2>§ 6 Absage und Erstattung</h2>
       <ol>
-        <li>Termine können bis 2 Stunden vor Beginn abgesagt werden. Der gezahlte Betrag wird erstattet, abzüglich einer Stornogebühr von 5 % für CopperLearn.</li>
+        <li>Termine können bis 2 Stunden vor Beginn kostenlos abgesagt werden. Der gezahlte Betrag wird vollständig erstattet.</li>
         <li>Sagt die Tutor:in ab oder erscheint sie nicht, wird ein bereits gezahlter Betrag vollständig erstattet.</li>
-        <li>Bei einer späteren Absage (weniger als 2 Stunden vor Beginn) oder Nichterscheinen der Nachhilfeschüler:in wird nichts erstattet. Der Betrag wird je zur Hälfte zwischen der Tutor:in und CopperLearn aufgeteilt.</li>
+        <li>Bei einer späteren Absage (weniger als 2 Stunden vor Beginn) oder Nichterscheinen der Nachhilfeschüler:in werden 50 % des Preises als Ausfallentschädigung für die Tutor:in einbehalten (abzüglich der Provision nach § 5), die übrigen 50 % werden erstattet. Der Nachhilfeschüler:in bleibt der Nachweis gestattet, dass kein oder ein geringerer Schaden entstanden ist.</li>
         <li>Das gesetzliche Widerrufsrecht bleibt unberührt. Wird ein Vertrag wirksam widerrufen, gelten die Regeln der <Link to="/widerruf">Widerrufsbelehrung</Link>.</li>
       </ol>
 

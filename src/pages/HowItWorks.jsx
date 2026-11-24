@@ -50,7 +50,7 @@ export default function HowItWorks() {
             ['Wer kann Nachhilfe geben?', 'Alle registrierten Schüler:innen, die ein Tutor-Profil anlegen. Bewertungen nach jedem Termin helfen, gute Tutor:innen zu finden.'],
             ['Ich bin unter 18. Darf ich mitmachen?', 'Ja. Für bezahlte Leistungen brauchst du aber die Zustimmung deiner Eltern bzw. Erziehungsberechtigten. Unter 16 Jahren muss auch der Verarbeitung deiner Daten ein Elternteil zustimmen.'],
             ['Wie werden meine Daten geschützt?', 'Telefonnummern und E-Mail-Adressen erscheinen nie auf öffentlichen Profilen. Mehr dazu in unserer Datenschutzerklärung.'],
-            ['Was passiert, wenn ich absagen muss?', 'Bis 2 Stunden vor Beginn bekommst du dein Geld zurück, abzüglich 5 % Stornogebühr. Danach wird nichts erstattet. Sagt die Tutor:in ab, bekommst du alles zurück.'],
+            ['Was passiert, wenn ich absagen muss?', 'Bezahlt wird bei der Buchung. Bis 2 Stunden vor Beginn kannst du kostenlos absagen und bekommst alles zurück. Bei späterer Absage oder wenn du nicht erscheinst, bekommst du die Hälfte zurück. Sagt die Tutor:in ab, bekommst du immer alles zurück.'],
             ['Wie kann ich etwas melden?', 'Über die Melde-Funktion an Profilen und Terminen, oder per E-Mail an ' + SITE.email + '.'],
           ]} />
         </Reveal>
