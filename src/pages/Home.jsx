@@ -26,16 +26,16 @@ export default function Home() {
       {/* HERO */}
       <section ref={ref} className="relative isolate overflow-hidden bg-brand-950 pb-20 pt-32 text-white sm:pb-28 sm:pt-40">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_30%,rgb(var(--brand-600)/0.55),transparent_70%)]" />
-        <div className="absolute -left-40 top-40 -z-10 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl" />
-        <div className="absolute -right-32 bottom-0 -z-10 h-96 w-96 rounded-full bg-brand-400/15 blur-3xl" />
+        <div className="absolute -left-40 top-40 -z-10 h-96 w-96 rounded-full bg-[radial-gradient(closest-side,rgb(var(--brand-500)/0.22),transparent)]" />
+        <div className="absolute -right-32 bottom-0 -z-10 h-96 w-96 rounded-full bg-[radial-gradient(closest-side,rgb(var(--brand-400)/0.18),transparent)]" />
         <motion.div style={{ opacity: fade }} className="container-x flex flex-col items-center text-center">
           <motion.img src="/logo.png" alt="CopperLearn Logo" width={176} height={176}
             style={{ y: logoY, scale: logoScale }}
-            initial={{ opacity: 0, scale: 0.8, filter: 'blur(12px)' }} animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+            initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="h-32 w-32 drop-shadow-[0_0_60px_rgba(150,120,240,0.65)] sm:h-44 sm:w-44" />
+            className="relative h-32 w-32 rounded-full shadow-[0_0_80px_10px_rgba(150,120,240,0.45)] will-change-transform sm:h-44 sm:w-44" />
           <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-8 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-brand-100 backdrop-blur">
+            className="mt-8 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm text-brand-100">
             Schülerfirma am {SITE.school}
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
@@ -137,7 +137,7 @@ export default function Home() {
       <section className="container-x">
         <Reveal>
           <div className="relative overflow-hidden rounded-4xl bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 px-6 py-14 text-white sm:px-14 sm:py-20">
-            <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-400/30 blur-3xl" />
+            <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[radial-gradient(closest-side,rgb(var(--brand-400)/0.35),transparent)]" />
             <div className="relative grid items-center gap-8 lg:grid-cols-[1.4fr_1fr]">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brand-200">Anteilscheine</p>

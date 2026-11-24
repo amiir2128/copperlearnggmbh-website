@@ -36,7 +36,7 @@ export default function CookieBanner() {
         <motion.div role="dialog" aria-modal="false" aria-labelledby="cc-title"
           initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 40, opacity: 0 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-xl rounded-3xl border border-line bg-surface/95 p-5 shadow-2xl backdrop-blur-xl sm:bottom-6 sm:p-6"
+          className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-xl rounded-3xl border border-line bg-surface p-5 shadow-2xl sm:bottom-6 sm:p-6"
           style={{ marginBottom: 'env(safe-area-inset-bottom)' }}>
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200"><Cookie className="h-5 w-5" /></div>

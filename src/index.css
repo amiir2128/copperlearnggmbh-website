@@ -52,7 +52,7 @@ body {
   .container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }
   .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[15px] font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-400/40 active:scale-[0.97]; }
   .btn-primary { @apply btn bg-brand-600 text-white shadow-glow hover:bg-brand-700; }
-  .btn-ghost { @apply btn border border-line bg-surface/70 text-ink backdrop-blur hover:border-brand-300 hover:text-brand-600; }
+  .btn-ghost { @apply btn border border-line bg-surface text-ink hover:border-brand-300 hover:text-brand-600; }
   .btn-light { @apply btn bg-white text-brand-800 hover:bg-brand-50; }
   .card { @apply rounded-3xl border border-line bg-surface p-6 shadow-soft sm:p-8; }
   .eyebrow { @apply text-sm font-semibold uppercase tracking-[0.14em] text-brand-600; }

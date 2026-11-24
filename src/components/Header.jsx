@@ -28,7 +28,7 @@ export default function Header() {
   useEffect(() => { document.body.style.overflow = open ? 'hidden' : '' }, [open])
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled || open ? 'border-b border-line/70 bg-canvas/75 backdrop-blur-xl backdrop-saturate-150' : 'border-b border-transparent'}`}
+    <header className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color] duration-300 ${scrolled || open ? 'border-b border-line/70 bg-canvas/85 backdrop-blur-md' : 'border-b border-transparent'}`}
       style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="container-x flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5" aria-label="CopperLearn Startseite">
