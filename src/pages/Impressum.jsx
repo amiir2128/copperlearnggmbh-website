@@ -9,8 +9,8 @@ export default function Impressum() {
       <p>
         <strong>CopperLearn</strong><br />
         IW JUNIOR Schülerfirma am {SITE.school}<br />
-        <Ph>Straße und Hausnummer der Schule</Ph><br />
-        <Ph>PLZ und Ort</Ph>
+        {SITE.street}<br />
+        {SITE.city}
       </p>
 
       <h2>Vertreten durch</h2>
@@ -33,7 +33,7 @@ export default function Impressum() {
       <p>CopperLearn ist eine Schülerinitiative und keine offizielle Einrichtung, App oder Website des {SITE.school}s.</p>
 
       <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-      <p><Ph>Vor- und Nachname, Anschrift wie oben</Ph></p>
+      <p><Ph>Vor- und Nachname</Ph>, {SITE.street}, {SITE.city}</p>
 
       <h2>Verbraucherstreitbeilegung</h2>
       <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>

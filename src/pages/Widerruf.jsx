@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import LegalLayout from '../components/LegalLayout'
-import { Ph } from '../components/ui'
 import { SITE } from '../config'
 
 export default function Widerruf() {
@@ -19,7 +18,7 @@ export default function Widerruf() {
     <LegalLayout title="Widerrufsbelehrung" intro="Für Verbraucher:innen, die bei CopperLearn bezahlte Leistungen buchen (Nachhilfetermine, Profil-Boost).">
       <h2>Widerrufsrecht</h2>
       <p>Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.</p>
-      <p>Um dein Widerrufsrecht auszuüben, musst du uns (CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}, <Ph>Straße, PLZ, Ort</Ph>, E-Mail: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>) mittels einer eindeutigen Erklärung (z. B. per E-Mail oder Brief) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst dafür die Widerrufsfunktion unten oder das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p>
+      <p>Um dein Widerrufsrecht auszuüben, musst du uns (CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}, {SITE.street}, {SITE.city}, E-Mail: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>) mittels einer eindeutigen Erklärung (z. B. per E-Mail oder Brief) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst dafür die Widerrufsfunktion unten oder das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p>
       <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest.</p>
 
       <h2>Folgen des Widerrufs</h2>
@@ -46,7 +45,7 @@ export default function Widerruf() {
       <h2>Muster-Widerrufsformular</h2>
       <p>(Wenn du den Vertrag widerrufen willst, dann fülle bitte dieses Formular aus und sende es zurück.)</p>
       <div className="rounded-2xl border border-line bg-canvas p-5 text-sm">
-        <p>An: CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}, <Ph>Straße, PLZ, Ort</Ph>, {SITE.email}</p>
+        <p>An: CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}, {SITE.street}, {SITE.city}, {SITE.email}</p>
         <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*)</p>
         <p>Bestellt am (*) / erhalten am (*)</p>
         <p>Name des/der Verbraucher(s)</p>

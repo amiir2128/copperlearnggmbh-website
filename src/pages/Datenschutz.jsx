@@ -9,7 +9,7 @@ export default function Datenschutz() {
       <h2>1. Verantwortlicher</h2>
       <p>
         CopperLearn, IW JUNIOR Schülerfirma am {SITE.school}<br />
-        <Ph>Straße, PLZ, Ort der Schule</Ph><br />
+        {SITE.street}, {SITE.city}<br />
         Vertreten durch: <Ph>Vor- und Nachname(n)</Ph><br />
         E-Mail: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
       </p>
@@ -71,7 +71,7 @@ export default function Datenschutz() {
         <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
         <li>Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21 DSGVO)</li>
         <li>Widerruf erteilter Einwilligungen jederzeit mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
-        <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO), z. B. bei <Ph>zuständige Landesdatenschutzbehörde des Bundeslandes der Schule</Ph></li>
+        <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO), für uns zuständig ist das Unabhängige Landeszentrum für Datenschutz Schleswig-Holstein (ULD), Holstenstraße 98, 24103 Kiel, <a href="https://www.datenschutzzentrum.de" target="_blank" rel="noopener noreferrer">www.datenschutzzentrum.de</a></li>
       </ul>
       <p>Schreib uns dafür einfach an <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
 

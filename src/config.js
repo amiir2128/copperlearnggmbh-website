@@ -3,6 +3,8 @@ export const SITE = {
   name: 'CopperLearn',
   slogan: 'Lernen verbindet',
   school: 'Coppernicus-Gymnasium',
+  street: 'Coppernicusstraße 1',
+  city: '22850 Norderstedt',
   email: 'CopperLearn.gGmbH@gmail.com',
   instagram: 'https://www.instagram.com/copperlearn_ggmbh',
   tiktok: 'https://www.tiktok.com/@copperlearn_ggmbh',
